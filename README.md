@@ -6,15 +6,15 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
 2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+    ```bash
+    npx expo start
+    ```
 
 ## Deploy with EAS
 
@@ -46,29 +46,29 @@ This project is configured for Expo Application Services (EAS):
 
 - Android (AAB):
 
-   ```bash
-   npm run eas:build:android
-   ```
+    ```bash
+    npm run eas:build:android
+    ```
 
 - iOS (IPA):
 
-   ```bash
-   npm run eas:build:ios
-   ```
+    ```bash
+    npm run eas:build:ios
+    ```
 
 ### 3. Submit to stores
 
 - Android:
 
-   ```bash
-   npm run eas:submit:android
-   ```
+    ```bash
+    npm run eas:submit:android
+    ```
 
 - iOS:
 
-   ```bash
-   npm run eas:submit:ios
-   ```
+    ```bash
+    npm run eas:submit:ios
+    ```
 
 ### 4. Publish OTA updates
 

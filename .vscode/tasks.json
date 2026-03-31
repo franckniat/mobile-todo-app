@@ -26,14 +26,28 @@
 			"label": "eas-build-android",
 			"type": "shell",
 			"command": "npx",
-			"args": ["eas", "build", "--platform", "android", "--profile", "production"],
+			"args": [
+				"eas",
+				"build",
+				"--platform",
+				"android",
+				"--profile",
+				"production"
+			],
 			"isBackground": false
 		},
 		{
 			"label": "eas-build-ios",
 			"type": "shell",
 			"command": "npx",
-			"args": ["eas", "build", "--platform", "ios", "--profile", "production"],
+			"args": [
+				"eas",
+				"build",
+				"--platform",
+				"ios",
+				"--profile",
+				"production"
+			],
 			"isBackground": false
 		},
 		{
