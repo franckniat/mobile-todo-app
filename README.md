@@ -16,6 +16,75 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    npx expo start
    ```
 
+## Deploy with EAS
+
+This project is configured for Expo Application Services (EAS):
+
+- `eas.json` profiles are ready for `development`, `preview`, and `production`
+- EAS Workflows are defined in `.eas/workflows/`
+
+### 1. One-time setup
+
+1. Login to Expo
+
+    ```bash
+    npx eas login
+    ```
+
+2. Initialize EAS in the project (creates project link and IDs)
+
+    ```bash
+    npx eas init
+    ```
+
+3. Set your app identifiers in `app.json` before first store build:
+
+- `expo.ios.bundleIdentifier`
+- `expo.android.package`
+
+### 2. Build store binaries
+
+- Android (AAB):
+
+   ```bash
+   npm run eas:build:android
+   ```
+
+- iOS (IPA):
+
+   ```bash
+   npm run eas:build:ios
+   ```
+
+### 3. Submit to stores
+
+- Android:
+
+   ```bash
+   npm run eas:submit:android
+   ```
+
+- iOS:
+
+   ```bash
+   npm run eas:submit:ios
+   ```
+
+### 4. Publish OTA updates
+
+```bash
+npm run eas:update:production -- --message "UI improvements"
+```
+
+### 5. EAS Workflows
+
+Run EAS cloud workflows from Expo:
+
+- `.eas/workflows/build-production.yml`
+- `.eas/workflows/update-production.yml`
+
+These can be triggered manually via workflow dispatch.
+
 In the output, you'll find options to open the app in a
 
 - [development build](https://docs.expo.dev/develop/development-builds/introduction/)

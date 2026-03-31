@@ -8,7 +8,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "eas:build:android": "npx eas build --platform android --profile production",
+    "eas:build:ios": "npx eas build --platform ios --profile production",
+    "eas:build:all": "npx eas build --platform all --profile production",
+    "eas:update:production": "npx eas update --branch production",
+    "eas:submit:android": "npx eas submit --platform android --profile production",
+    "eas:submit:ios": "npx eas submit --platform ios --profile production"
   },
   "dependencies": {
     "@expo-google-fonts/space-grotesk": "^0.4.1",

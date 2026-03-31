@@ -1,0 +1,11 @@
+name: Update Production
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  publish_update:
+    name: Publish OTA update
+    type: update
+    params:
+      branch: production
