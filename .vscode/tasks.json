@@ -1,0 +1,26 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "dev-start",
+			"type": "shell",
+			"command": "npm run start",
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "dev-lint",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "lint"],
+			"isBackground": false
+		},
+		{
+			"label": "deps-install",
+			"type": "shell",
+			"command": "npm",
+			"args": ["install"],
+			"isBackground": false
+		}
+	]
+}
